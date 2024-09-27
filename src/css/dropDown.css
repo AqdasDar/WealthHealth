@@ -1,0 +1,35 @@
+.dropdown {
+	width: 100%;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	cursor: pointer;
+	position: relative;
+	background-color: #fff;
+}
+
+.dropdown-header {
+	display: flex;
+	justify-content: space-between;
+	padding: 12px;
+}
+
+.dropdown-icon {
+	margin-left: 10px;
+
+}
+
+.dropdown-list {
+	border: 1px solid #eee !important;
+	border-top: none;
+	max-height: 150px;
+	overflow-y: auto;
+	background-color: #fff;
+}
+
+.dropdown-item {
+	padding: 10px;
+}
+
+.dropdown-item:hover {
+	background-color: #eee !important;
+}
