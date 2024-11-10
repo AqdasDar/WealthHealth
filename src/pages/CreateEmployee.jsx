@@ -4,12 +4,12 @@ import "react-datepicker/dist/react-datepicker.css";
 import Modal from "react-modal";
 import { departments } from "../data/departments";
 import { states } from "../data/state";
-import DropDown from "dropdown_react_aqdas";
 import { Link } from "react-router-dom";
 import "../css/createEmployee.css";
 import { useDispatch } from "react-redux";
 import { addEmployee } from "../reducer/employeeSlice";
 import "../css/dropDown.css";
+import DropDown from "dropdown_react_aqdas";
 
 Modal.setAppElement("#root");
 
@@ -74,6 +74,7 @@ const CreateEmployee = () => {
 
                     <label htmlFor="date-of-birth">Date of Birth</label>
                     <DatePicker
+                        id={"date-of-birth"}
                         selected={dateOfBirth}
                         onChange={(date) => setDateOfBirth(date)}
                         dateFormat="MM/dd/yyyy"
@@ -81,6 +82,7 @@ const CreateEmployee = () => {
 
                     <label htmlFor="start-date">Start Date</label>
                     <DatePicker
+                        id={"start-date"}
                         selected={startDate}
                         onChange={(date) => setStartDate(date)}
                         dateFormat="MM/dd/yyyy"
